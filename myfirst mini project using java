@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class miniProject {
+ 
+    
+    public static void main(String[] args) {
+        int myNumber = (int)(Math.random()*100);
+        Scanner sc = new Scanner(System.in);
+        int userName = 0;
+
+        do{
+            System.out.println("Guess a number between 1 and 100");
+            userName = sc.nextInt();
+
+            if(userName == myNumber){
+                System.out.println("You guessed it!");
+                break;
+            
+            }  else if (userName > myNumber) {
+                System.out.println("Too high!");
+            
+            } else {
+                System.out.println("Too low!");   
+             }
+             } while (userName >= 0); // end;
+                
+            
+            System.out.println("my number was");
+            System.out.println(myNumber);
+        }
+    }
+
+
